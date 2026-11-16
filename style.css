@@ -1,0 +1,232 @@
+/* all html elements is having 0 margin and 0 padding as we are applying universal selector */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+header>img {
+  width: 150px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav>ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+header,#Home,#About,#Skills,#Contacts,footer{
+  margin-left: 100px;
+}
+.homecontents>h1 {
+  font-size: 46px;
+  font-family: "Redaction 35", serif;
+  margin-bottom: 20px;
+}
+.homecontents>p {
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+}
+.homecontents>a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+}
+#Home {
+  position: relative;
+  /* background-color: aquamarine; */
+  height: 82vh;
+}
+.homeimages {
+  /* position of parent is relative while child position is absolute taking the position to absolute */
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  width: 45%;
+  height: 70%;
+
+}
+/* in below  we have to give bottom and left otherwise transition will not work */
+.homeimages img {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  transition:
+    bottom 4s,
+    left 2s;
+}
+.homecontents {
+  padding-top: 200px;
+}
+.homeimages:hover #shape {
+  bottom: 70px;
+}
+.homeimages:hover #girl {
+  left: 40px;
+}
+
+.mainhead {
+  text-align: center;
+}
+.subhead {
+  text-align: center;
+  color: goldenrod;
+}
+#aboutcontainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 200px;
+  margin-top: 60px;
+  /* background-color: blanchedalmond; */
+}
+.aboutimages img {
+  width: 500px;
+}
+.aboutcontents p {
+  margin-right: 100px;
+  line-height: 1.5rem;
+  font-size: large;
+  /* fontweight is the font darkness */
+  font-weight: 500;
+  /* text align end start,justify */
+  text-align: justify;
+}
+.aboutcontents ul {
+  list-style: none;
+  line-height: 1.6rem;
+  font-weight: 500;
+}
+.aboutcontents i {
+  margin-right: 20px;
+}
+#skills{
+  margin-top: 50px;
+}
+.maincontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  margin-top: 50px;
+  align-items: center;
+
+}
+.eachbarcontainer{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.basebar{
+  height: 0.5rem;
+  width: 100%;
+  background-color:black;
+  position: absolute;
+  top: 23px;
+  border-radius: 0.5rem;
+}
+.htmlbar{
+  height: 0.5rem;
+  width: 89%;
+  background-color: orange;
+  position: absolute;
+  top: 23px;
+  border-radius: 0.5rem;
+}
+.cssbar{
+  height: 0.5rem;
+  width: 80%;
+  background-color: orange;
+  position: absolute;
+  top: 23px;
+  border-radius: 0.5rem;
+}
+.javascriptbar{
+  height: 0.5rem;
+  width: 84%;
+  background-color: orange;
+  position: absolute;
+  top: 23px;
+  border-radius: 0.5rem;
+}
+.reactbar{
+  height: 0.5rem;
+  width: 90%;
+  background-color: orange;
+  position: absolute;
+  top: 23px;
+  border-radius: 0.5rem;
+}
+.contactcontainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.iconcontainer{
+  padding: 15px;
+}
+.iconcontainer{
+  color: black;
+  font-size: 30px;
+}
+.iconcontainer:hover{
+  animation: myAnimation 5s;
+  background-color: rgb(121, 121, 7);
+  border-radius: 50%;
+}
+@keyframes myAnimation{
+  0%{
+    transform: rotate(30deg);
+    background-color: yellow;
+  }
+  25%{
+    transform: rotate(-30deg);
+    background-color: rgb(201, 201, 58);
+  }
+  50%{
+    transform: rotate(30deg);
+    background-color: rgb(117, 117, 33);
+  }
+  75%{
+    transform: rotate(-30deg);
+    background-color: rgb(124, 124, 9);
+  }
+  100%{
+    transform: rotate(30deg);
+    background-color: rgb(37, 37, 3);
+  }
+
+}
+footer>p{
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+/* scrollbar is having two elemnts thumb & track we use  webkit  for it */
+::-webkit-scrollbar{
+      width:10px;
+    }
+::-webkit-scrollbar-track{
+  background-color:wheat;
+}
+::-webkit-scrollbar-thumb{
+  background-color:orange;
+  border-radius: 2px;
+}
+

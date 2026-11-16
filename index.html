@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- portfolio  icon image link (link:favicon) paste the image address inside it-->
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGar2DVueNpoKi66PhW0ROHI6hWCOC59Lif6-_497k7Q&s=10"
+      type="image/x-icon"
+    />
+    <!-- google font link taken from embed google font after selecting boths font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Redaction+35:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link for fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- animate.css  using animate css cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOS ANIMATION ON SCROLL LIBRARY  LINK FOR CSS AND JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- <h1>Hello World</h1>
+    <h1><i class="fa-solid fa-shop"></i></h1>
+    <img   width="200px"      src="./ASSETS/Modern Web Developer Monogram Logo.png" alt="LOGO"> -->
+    <header>
+      <img src="./ASSETS/Modern Web Developer Monogram Logo.png" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="Home">
+      <div class="homecontents">
+        <!-- using animate-animated   and type of movement needed add it second from the animation css  page -->
+        <h1 class="animate__animated animate__bounce">
+          I'm Giftee <span style="color: goldenrod">RS</span>
+        </h1>
+        <p>
+          This is my official portfolio website to describe all <br />Details
+          and work experience in web developement
+        </p>
+        <a target="_blank" href="./ASSETS/AnaSteelCV (7).pdf">Download Cv</a>
+      </div>
+      <div class="homeimages">
+        <img id="shape" src="./ASSETS/shape.png" alt="shapeimg" />
+        <img id="girl" src="./ASSETS/girl.png" alt="girlimg" />
+      </div>
+    </section>
+
+    <section id="About">
+      <h1 class="animate__animated animate__bounce mainhead">About Me</h1>
+      <h3 class="animate__animated animate__bounce subhead">Introduction</h3>
+
+      <div id="aboutcontainer">
+        <div class="aboutimages">
+          <!-- animated using AOS library -->
+          <img data-aos="flip-right" src="./ASSETS/about.jpg" alt="" />
+        </div>
+
+        <div class="aboutcontents">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+            voluptatibus nemo eveniet harum vitae, molestiae ex laboriosam
+            labore eum tempore repellendus possimus sint eius ut similique
+            quaerat laborum nisi officiis. Reprehenderit perspiciatis omnis
+            blanditiis voluptates esse repellendus facere accusamus repellat
+            consequatur deleniti! Vel nobis, quibusdam sequi iure ipsum
+            voluptatum consequuntur non soluta tenetur animi maxime ea
+            repellendus voluptas perspiciatis facere! Maiores atque laudantium
+            consectetur! Officiis, modi corporis. Quibusdam placeat aperiam
+            consectetur, ratione sed provident ullam iste eligendi porro dicta a
+            cupiditate molestiae officiis, numquam quod mollitia qui odio
+            necessitatibus! Odio.
+          </p>
+          <ul>
+            <!-- link from font awesome for symbols -->
+            <li><i class="fa-solid fa-user"></i>Giftee RS</li>
+            <li><i class="fa-solid fa-phone"></i>9087654321</li>
+            <li><i class="fa-solid fa-envelope"></i>giftee@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="Skills">
+      <h1 class="animate__animated animate__bounce mainhead">Skills</h1>
+      <h3 class="animate__animated animate__bounce subhead">My Skills</h3>
+
+      <div class="maincontainer">
+        <div class="skillschartcontainer">
+          <div class="eachbarcontainer">
+            <h3>HTML</h3>
+            <h3>89%</h3>
+
+            <div class="basebar"></div>
+            <div class="htmlbar"></div>
+          </div>
+          <br />
+          <div class="eachbarcontainer">
+            <h3>css</h3>
+            <h3>80%</h3>
+            <div class="basebar"></div>
+            <div class="cssbar"></div>
+          </div>
+          <br />
+          <div class="eachbarcontainer">
+            <h3>javascript</h3>
+            <h3>84%</h3>
+            <div class="basebar"></div>
+            <div class="javascriptbar"></div>
+          </div>
+          <br />
+          <div class="eachbarcontainer">
+            <h3>React</h3>
+            <h3>90%</h3>
+            <div class="basebar"></div>
+            <div class="reactbar"></div>
+          </div>
+        </div>
+        <div class="skillsimage">
+          <img
+            data-aos="zoom-out-down"
+            src="./ASSETS/skills (1).jpg"
+            alt="skill image"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="Contacts">
+      <h1 class="animate__animated animate__bounce mainhead">Contacts</h1>
+      <h3 class="animate__animated animate__bounce subhead">My Contacts</h3>
+      <div class="contactcontainer">
+        <div class="iconcontainer">
+          <!-- link from font awesome for each icons -->
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="iconcontainer">
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="iconcontainer">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="iconcontainer">
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="iconcontainer">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="iconcontainer">
+          <a href=""><i class="fa-sharp fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy;My Portfolio Website - October 2026,All Rights Reserved to
+        &reg;Giftee RS
+      </p>
+      <div
+        style="position: fixed; right: 10px; bottom: 10px"
+        class="iconcontainer"
+      
+      >
+        <a href=""><i class="fa-solid fa-chevron-up"></i></a>
+      </div>
+    </footer>
+  </body>
+  <!-- link  for AOS initialization -->
+  <script>
+    AOS.init();
+  </script>
+</html>
